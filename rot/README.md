@@ -1,6 +1,7 @@
 quick experiments in learning about python packaging, and rewriting rotN
 code i've now written on several occasions
 
+```bash
 usage:
   export PYTHONPATH="$HOME/py:$PYTHONPATH" # put in in zshrc
   
@@ -8,6 +9,7 @@ usage:
 
   python ~/py/rot             # for CLI tool; pipe, filename, or string literal
   python -i -c 'import rot'   # for repl usage
+```
 
 
-see __init__.py for summary of what i learned about packaging.
+see [__init__.py](__init__.py) for summary of what i learned about packaging.
