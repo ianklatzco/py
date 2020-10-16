@@ -2,29 +2,29 @@ tools for doing rot13 quickly (because i've written this code \>ten times)
 
 also an exercise in learning about python packaging
 
+### usage
 ```bash
+# get code
+git clone https://github.com/ianklatzco/py
+
+# to us as use CLI tool
+# accepts from stdin, filename, or argument
+python ~/py/rot
+
+ROTs 0 to 25
 usage:
-  # get code
-  git clone https://github.com/ianklatzco/py
+  python rotn.py STRING
+  python rotn.py FILENAME
+  printf 'foo' | python rotn.py
 
-  # to us as use CLI tool
-  # accepts from stdin, filename, or argument
-  python ~/py/rot
+# alternatively, import as library
 
-	ROTs 0 to 25
-	usage:
-	  python rotn.py STRING
-	  python rotn.py FILENAME
-	  printf 'foo' | python rotn.py
+# put on path so you can import
+export PYTHONPATH="$HOME/py:$PYTHONPATH" # put in in zshrc
 
-
-  # alternatively, import as library
-
-  # put on path so you can use within python
-  export PYTHONPATH="$HOME/py:$PYTHONPATH" # put in in zshrc
-  
-  python -i -c 'import rot'   # for repl usage
-  >>> rot.rot13('foo')
+# use it!
+python -i -c 'import rot'   # for repl usage
+# >>> rot.rot13('foo')
 ```
 
 learned:
