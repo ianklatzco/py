@@ -12,4 +12,4 @@ usage:
 ```
 
 
-see [__init__.py](__init__.py) for summary of what i learned about packaging.
+see [`__init__.py`](__init__.py) for summary of what i learned about packaging.
