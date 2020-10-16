@@ -13,9 +13,9 @@ python ~/py/rot
 
 ROTs 0 to 25
 usage:
-  python rotn.py STRING
-  python rotn.py FILENAME
-  printf 'foo' | python rotn.py
+  python ~/py/rot STRING
+  python ~/py/rot FILENAME
+  printf 'foo' | python ~/py/rot
 
 # alternatively, import as library
 
